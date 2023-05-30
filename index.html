@@ -119,7 +119,7 @@
               <span>Second Emergency Contact Name</span>
               <span>الاسم الثاني</span>
             </label>
-						<span id="error_first_contact_name" class="error"></span>
+						<span id="error_second_contact_name" class="error"></span>
 						<input class="text-input" type="text" id="second_contact_name" value=""/>
 					</div>
 					<div class="input-box">
@@ -127,7 +127,7 @@
               <span>Second Emergency Contact Relationship</span>
               <span>صلة القرابة</span>
             </label>
-						<span id="error_first_contact_rel" class="error"></span>
+						<span id="error_second_contact_rel" class="error"></span>
 						<select id="second_contact_rel">
 							<option value="Parent">Parent ولي امر</option>
 							<option value="Sibling">Sibling اخ/اخت</option>
@@ -142,7 +142,7 @@
               <span>Second Emergency Contact Phone Number</span>
               <span>رقم الموبايل</span>
             </label>
-						<span id="error_first_contact_number" style="error"></span>
+						<span id="error_second_contact_number" style="error"></span>
 						<input class="text-input" type="text" id="second_contact_number" value=""/>
 					</div>
 					<button id="button" onclick="generateQR()" class="cta-button"/>Generate QR</button>
@@ -179,8 +179,8 @@
 					document.getElementById("error_"+column).textContent = "";
 				}
 				document.getElementById("button").onclick = "";
-				var url = "https://script.google.com/macros/s/AKfycbyZPHDOEkBZVq6P5H3TXMqCMEwcoMAAbCuWw7UOwfOxrVGpHJNCGRtpxr236U8yv1dA/exec;
-				var xhr = new XMLHttpRequest();
+				var url = "https://script.google.com/macros/s/AKfycbziCF1mNqThQLAO8i26VNIiMBLRVdQbaSVyZjB3gkxQfZpz9LcLQVHtEUMo4yIyazl0vg/exec";
+        var xhr = new XMLHttpRequest();
 				xhr.onreadystatechange = () => {
 					if (xhr.readyState === 4) {
 						var res = JSON.parse(xhr.response);

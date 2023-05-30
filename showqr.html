@@ -6,10 +6,30 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 	</head>
 	<body>
+    <div class="centered">
+			<img src="static-img/logo.png" class="logo"/>
+			<div>powered by</div>
+			<div class="title">User Profile</div>
+      <div class="form">
+        <div><span class="form-title">Name </span><span id="name"></span></div>
+        <div><span class="form-title">Phone Number </span><span id="name"></span></div>
+        <div><span class="form-title">Blood Type </span><span id="name"></span></div>
+        <div><span class="form-title">National Id </span><span id="name"></span></div>
+        <div><span class="form-title">Medical Insurance </span><span id="name"></span></div>
+        <div><span class="form-title">Health Issues </span><span id="name"></span></div>
+        <div><span class="form-title">First Emergency Contact Name </span><span id="name"></span></div>
+        <div><span class="form-title">First Emergency Contact Rel </span><span id="name"></span></div>
+        <div><span class="form-title">First Emergency Contact Number </span><span id="name"></span></div>
+        <div><span class="form-title">Second Emergency Contact Name </span><span id="name"></span></div>
+        <div><span class="form-title">Second Emergency Contact Rel </span><span id="name"></span></div>
+        <div><span class="form-title">Second Emergency Contact Number </span><span id="name"></span></div>
+      </div>
+    </div>
+    </div>
 		<script>
-			var my_url = window.location.href.split("/");
+			var my_url = window.location.href.split("=");
 			var token = my_url[my_url.length - 1];
-			var url = "https://script.google.com/macros/s/AKfycby1ChrAFGRV42nhMuWHU3FOHTpOzZs6Q7Aea5rfnLJdn9eHUE2kCWk_wiZ7DXBtLCaC/exec";
+			var url = "https://script.google.com/macros/s/AKfycbziCF1mNqThQLAO8i26VNIiMBLRVdQbaSVyZjB3gkxQfZpz9LcLQVHtEUMo4yIyazl0vg/exec";
 			var xhr = new XMLHttpRequest();
 			xhr.onreadystatechange = () => {
 				if (xhr.readyState === 4) {
