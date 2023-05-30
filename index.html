@@ -1,0 +1,211 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<title>Make Your QR | RCT</title>
+		<link rel="stylesheet" type="text/css" href="css/form.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+	</head>
+	<body>
+		<div class="centered">
+			<img src="static-img/logo.png" class="logo"/>
+			<div>powered by</div>
+			<div class="title">Make yourself Safer in case of Emergency</div>
+			<div class="form">
+				<div id="no-qr">
+					<!-- Info About the User -->
+					<div class="form-title">
+            <span>Some Information abour Yourself!</span>
+            <span>!شوية معلومات عنك</span>
+          </div>
+					<div class="input-box">
+						<label class="label">
+              <span>Name</span>
+              <span>الاسم</span>
+            </label>
+						<span id="error_name" class="error"></span>
+						<input class="text-input" type="text" id="name" value=""/>
+					</div>
+					<div class="input-box">
+						<label class="label">
+              <span>Phone Number (Whatsapp)</span>
+              <span>رقم الموبايل</span>
+            </label>
+						<span id="error_phone_number" class="error"></span>
+						<input class="text-input" type="text" id="phone_number" value=""/>
+					</div>
+					<div class="input-box">
+						<label class="label">
+              <span>National ID Number</span>
+              <span>الرقم القومي</span>
+            </label>
+						<span id="error_address" class="error"></span>
+						<input class="text-input" type="text" id="address" value=""/>
+					</div>
+					<div class="input-box">
+						<label class="label">
+              <span>Blood Type</span>
+              <span>فصيلة الدم</span>
+            </label>
+						<span id="error_blood_type" class="error"></span>
+						<select id="blood_type">
+							<option value="AB+">AB+</option>
+							<option value="AB-">AB-</option>
+							<option value="A+">A+</option>
+							<option value="A-">A-</option>
+							<option value="B+">B+</option>
+							<option value="B-">B-</option>
+							<option value="O+">O+</option>
+							<option value="O-">O-</option>
+							<option value="Not Sure">Not Sure</option>
+						</select>
+					</div>
+					<div class="input-box">
+						<label class="label">
+              <span>Medical Insurance Coverage (if any)</span>
+              <span>التأمين الطبي اذا وجد</span>
+            </label>
+						<span id="error_medical_insurance" class="error"></span>
+						<input class="text-input" type="text" id="medical_insurance" value=""/>
+					</div>
+					<div class="input-box">
+						<label class="label">
+              <span>Do you have any health issues?</span>
+              <span>هل لديك اي عوائق طبية؟</span>
+            </label>
+						<span id="error_health_issues" class="error"></span>
+						<input class="text-input" type="text" id="health_issues" value=""/>
+					</div>
+					<!-- Emergency Contacts -->
+					<div class="form-title">
+					  <span> In Case of Emergency Who should we call?</span>
+            <span>نكلم مين في الطوارئ؟</span>
+          </div>
+					<div class="input-box">
+						<label class="label">
+              <span>First Emergency Contact Name</span>
+              <span>الاسم الاول</span>
+            </label>
+						<span id="error_first_contact_name" class="error"></span>
+						<input class="text-input" type="text" id="first_contact_name" value=""/>
+					</div>
+					<div class="input-box">
+						<label class="label">
+              <span>First Emergency Contact Relationship</span>
+              <span>صلة القرابة</span>
+            </label>
+						<span id="error_first_contact_rel" class="error"></span>
+						<select id="first_contact_rel">
+							<option value="Parent">Parent ولي امر</option>
+							<option value="Sibling">Sibling اخ/اخت</option>
+							<option value="Cousin">Cousin قريب من الدرجة الاولة</option>
+							<option value="Spouse">Spouse زوج</option>
+							<option value="Friend">Friend صديق</option>
+							<option value="Other">Other اخر</option>
+						</select>
+					</div>
+					<div class="input-box">
+						<label class="label">
+              <span>First Emergency Contact Phone Number</span>
+              <span>رقم الموبايل</span>
+            </label>
+						<span id="error_first_contact_number" class="error"></span>
+						<input class="text-input" type="text" id="first_contact_number" value=""/>
+					</div>
+					<div class="input-box">
+						<label class="label">
+              <span>Second Emergency Contact Name</span>
+              <span>الاسم الثاني</span>
+            </label>
+						<span id="error_first_contact_name" class="error"></span>
+						<input class="text-input" type="text" id="second_contact_name" value=""/>
+					</div>
+					<div class="input-box">
+						<label class="label">
+              <span>Second Emergency Contact Relationship</span>
+              <span>صلة القرابة</span>
+            </label>
+						<span id="error_first_contact_rel" class="error"></span>
+						<select id="second_contact_rel">
+							<option value="Parent">Parent ولي امر</option>
+							<option value="Sibling">Sibling اخ/اخت</option>
+							<option value="Cousin">Cousin قريب من الدرجة الاولة</option>
+							<option value="Spouse">Spouse زوج</option>
+							<option value="Friend">Friend صديق</option>
+							<option value="Other">Other اخر</option>
+						</select>
+					</div>
+					<div class="input-box">
+						<label class="label">
+              <span>Second Emergency Contact Phone Number</span>
+              <span>رقم الموبايل</span>
+            </label>
+						<span id="error_first_contact_number" style="error"></span>
+						<input class="text-input" type="text" id="second_contact_number" value=""/>
+					</div>
+					<button id="button" onclick="generateQR()" class="cta-button"/>Generate QR</button>
+				</div>
+				<div id="qr" class="form" style="display:none;visibility:hidden"></div>
+			</div>
+		</div>
+		<script>
+			function generateQR(){
+				const sheet_structure = [
+				  "name",
+				  "phone_number",
+				  "blood_type",
+				  "national_id",
+          "medical_insurance",
+          "health_issues",
+				  "first_contact_name",
+				  "first_contact_rel",
+				  "first_contact_number",
+				  "second_contact_name",
+				  "second_contact_rel",
+				  "second_contact_number"
+				];
+				var data = {}
+				for(var i in sheet_structure){
+					var column = sheet_structure[i];
+					console.log(column);
+					const text = document.getElementById(column).value;
+					if(text.length === 0){
+            document.getElementById("error_"+column).innerHTML = "<span>Field is Required!</span><span>مطلوب ادخال قيمة</span>";
+						return;
+					}
+					data[column] = text;
+					document.getElementById("error_"+column).textContent = "";
+				}
+				document.getElementById("button").onclick = "";
+				var url = "https://script.google.com/macros/s/AKfycbyZPHDOEkBZVq6P5H3TXMqCMEwcoMAAbCuWw7UOwfOxrVGpHJNCGRtpxr236U8yv1dA/exec";
+				var xhr = new XMLHttpRequest();
+				xhr.onreadystatechange = () => {
+					if (xhr.readyState === 4) {
+						var res = JSON.parse(xhr.response);
+						if(res.added){
+							document.getElementById('qr').style.display = "block";
+							document.getElementById('qr').style.visibility = "visible";
+							document.getElementById('no-qr').style.display = "none";
+							document.getElementById('no-qr').style.visibility = "hidden";
+							const qrcode = new QRCode(document.getElementById('qr'), {
+								text: "https://localhost/show.html?token=" + res.token,
+								width: 400,
+								height: 400,
+  								colorDark : '#000',
+  								colorLight : '#fff',
+  								correctLevel : QRCode.CorrectLevel.H
+							});
+							 
+						}
+					}
+				};
+                xhr.open("POST",url, true);
+                xhr.setRequestHeader('Content-Type', 'text/plain;charset=utf-8');
+                xhr.send(JSON.stringify(data));
+			}
+		</script>
+		<script src="https://cdn.jsdelivr.net/gh/davidshimjs/qrcodejs/qrcode.min.js"></script>
+	</body>
+</html>

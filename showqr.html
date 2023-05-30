@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<title>See Info | RCT QR</title>
+		<link rel="stylesheet" type="text/css" href="css/form.css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+	</head>
+	<body>
+		<script>
+			var my_url = window.location.href.split("/");
+			var token = my_url[my_url.length - 1];
+			var url = "https://script.google.com/macros/s/AKfycby1ChrAFGRV42nhMuWHU3FOHTpOzZs6Q7Aea5rfnLJdn9eHUE2kCWk_wiZ7DXBtLCaC/exec";
+			var xhr = new XMLHttpRequest();
+			xhr.onreadystatechange = () => {
+				if (xhr.readyState === 4) {
+					console.log(xhr.response);
+				}
+			};
+    	    xhr.open("GET",url, true);
+    	    xhr.setRequestHeader('Content-Type', 'text/plain;charset=utf-8');
+    	    xhr.send("?token="+token);
+		</script>
+	</body>
+</html>
